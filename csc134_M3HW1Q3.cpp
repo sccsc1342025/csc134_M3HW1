@@ -26,7 +26,7 @@ int main()
         cin >> choice;
 
         if (choice == "waterfall") {
-            cout << "You walk to the waterfall and jump down. Landing in the water it carries you to a cave full of treasure" << endl;
+            cout << "You walk to the waterfall and jump down. Landing in the water it carries you down a river to a cave full of treasure" << endl;
         }else if (choice == "mountain") {
             cout << "You walk up the trail on the mountain. Halfway there you slip and fall to your death. Game over" << endl;
         }else {
