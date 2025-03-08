@@ -12,18 +12,18 @@ int main()
     // variables
     double mealPrice;
     int orderType;
-    double tax, tip, totalAmount;
+    double tax, tip = 0.0, totalAmount;
 
     // constants
     const double Tax_rate = 0.05;
-    const double Tip_rate = 0.015;
+    const double Tip_rate = 0.15;
 
     // price of meal
-    cout << "Please enter the price of the meal: $" << endl;
+    cout << "Please enter the price of the meal:$";
     cin >> mealPrice;
 
     // order here or to go
-    cout << "Is the order for here or to go? Type 1 for here and 2 for to go" << endl;
+    cout << "Is the order for here or to go? Type 1 for here and 2 for to go:";
     cin >> orderType;
 
     // 15% tip
@@ -32,15 +32,15 @@ int main()
     }
 
     // meal price, tax, tip, and total amount
-    cout << "the meal price is: $" << endl;
-    cout << "Tax is 5%: " << endl;
+    cout << "the meal price is: " << mealPrice << endl;
+    cout << "Tax is 5%: " << tax << endl;
     if (orderType == 1) {
-        cout << "Tax is 15%: $" << tip << endl;
+        cout << "Tax is 15%: " << tip << endl;
     }else {
         cout << "Tax is 15%:0.00$ (To go)" << endl;
     }
     totalAmount = mealPrice + tax + tip;
-    cout << "Total amount: $" << totalAmount << endl;
+    cout << "Total amount:$" << totalAmount << endl;
 
 
     return 0;
