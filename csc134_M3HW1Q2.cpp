@@ -28,16 +28,19 @@ int main()
 
     // 15% tip
     if (orderType == 1) {
-        tax = mealPrice * Tax_rate;
+        tip = mealPrice * Tip_rate;
     }
 
+    // tax
+    tax = mealPrice * Tax_rate;
+
     // meal price, tax, tip, and total amount
-    cout << "the meal price is: " << mealPrice << endl;
-    cout << "Tax is 5%: " << tax << endl;
+    cout << "the meal price is:$" << mealPrice << endl;
+    cout << "Tax is 5%:$" << tax << endl;
     if (orderType == 1) {
-        cout << "Tax is 15%: " << tip << endl;
+        cout << "Tip is 15%: " << tip << endl;
     }else {
-        cout << "Tax is 15%:0.00$ (To go)" << endl;
+        cout << "Tip is 15%:0.00$ (To go)" << endl;
     }
     totalAmount = mealPrice + tax + tip;
     cout << "Total amount:$" << totalAmount << endl;
